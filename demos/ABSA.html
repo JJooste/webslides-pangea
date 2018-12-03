@@ -30,6 +30,8 @@
     <!-- Optional - CSS SVG Icons (Font Awesome) -->
     <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
 
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/pangea.css">
+
     <!-- SOCIAL CARDS (ADD YOUR INFO) -->
 
     <!-- FACEBOOK -->
@@ -143,11 +145,8 @@
         <section class="bg-black aligncenter">
           <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
           <span class="background dark" style="background-image:url('../static/images/absa/lion.jpg')"></span>
-          <!-- background with a frame frame -->
-          <span class="background frame"></span>
           <!--.wrap = container (width: 90%) -->
           <div class="wrap fadeInUp">
-            <img src="../static/images/absa/pangaea_logo_absa_orange.png" alt="Pangea">
             <h1>
               System Architecture
             </h1>
@@ -158,7 +157,6 @@
           <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
           <span class="background dark" style="background-image:url('../static/images/absa/lion.jpg')"></span>
           <!-- background with a frame frame -->
-          <span class="background frame"></span>
           <!--.wrap = container (width: 90%) -->
           <div class="wrap fadeInUp">
             <h1>
@@ -166,53 +164,40 @@
             </h1>
             <div class="grid vertical-align">
               <div class="column">
-                <ul>
+                <ul class="pangea-ul">
                   <li>
-                    <svg class="fa-circle">
-                      <use xlink:href="#fa-circle"></use>
-                    </svg><span>Two projects(TMO and TMW) each serving its own purpose</span>
+                    <span>Two projects(TMO and TMW) each serving its own purpose</span>
                   </li>
                   <li>
-                    <svg class="fa-circle">
-                      <use xlink:href="#fa-circle"></use>
-                    </svg><span>
+                    <span>
                     These projects are built using the Angular (Version 4) MVVC Framework
                   </span>
                   </li>
                   <li>
-                    <svg class="fa-circle">
-                      <use xlink:href="#fa-circle"></use>
-                    </svg><span>
+                    <span>
                     Solar based on Bootstrap library
                   </span>
                   </li>
                   <li>
-                    <svg class="fa-circle">
-                      <use xlink:href="#fa-circle"></use>
-                    </svg><span>
+                    <span>
                     Uses NPM to manage its dependencies
                   </span>
                   </li>
                   <li>
-                    <svg class="fa-circle">
-                      <use xlink:href="#fa-circle"></use>
-                    </svg><span>
+                    <span>
                     Karma and Jasmine ( Unit testing frameworks) used to execute unit tests
                   </span>
                   </li>
                   <li>
-                    <svg class="fa-circle">
-                      <use xlink:href="#fa-circle"></use>
-                    </svg><span>
+                    <span>
                     Finally, Webpack is used to bundle the entire application into a single executable package
                   </span>
                   </li>
                 </ul>
-                <small>//TODO: Align items</small>
               </div>
               <!-- .end .column -->
               <div class="column">
-                <small>//TODO: add image</small>
+                <img src="../static/images/absa/fe.jpg">
               </div>
               </div>
               <!-- .end .column -->
@@ -220,6 +205,118 @@
           </div>
           <!-- .end .wrap -->
         </section>
+
+        <section class="bg-black aligncenter">
+          <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
+          <span class="background dark" style="background-image:url('../static/images/absa/lion.jpg')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap fadeInUp">
+            <h1>
+              Backend
+            </h1>
+            <div class="grid vertical-align">
+              <div class="column">
+                <ul class="pangea-ul">
+                  <li>
+                    <span>Spring Boot Application using Maven as its dependency management system</span>
+                  </li>
+                  <li>
+                    <span>
+                    Used to provide Restful API to service the front ends
+                  </span>
+                  </li>
+                  <li>
+                    <span>
+                    Data is persisted and retrieved from a SQL Server Database
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                    Developed using a Domain Driven Design architecture paradigm while making use of CQRS and event sourcing. Axon (version 3) framework is used to make this possible
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                    A dockerised image of the app is created during the final build and hosted in Openshift
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <img src="../static/images/absa/onion.png">
+              </div>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('../static/images/absa/lion.jpg')"></span>
+          <div class="wrap">
+            <h2>The Other Guys (DevOps)</h2>
+            <ul class="bg-gradient-gray flexblock clients" style="opacity: 0.8">
+              <li>
+                <figure>
+                  <img class=" logo-height" src="../static/images/absa/Logotype_RH_OpenShift_wLogo_RGB_Gray.png" alt="Google">
+                  <figcaption>
+                    <h3>OpenShift</h3>
+                    <p>OpenShift is a container application platform that brings docker and Kubernetes to the enterprise.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <a href="#" title="Client">
+                  <figure>
+                    <img class="logo-height" src="../static/images/absa/mono_horizontal_large.png" alt="Airbnb">
+                    <figcaption>
+                      <h3>Docker</h3>
+                      <p>Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications,
+                        whether on laptops, data center VMs, or the cloud.</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Client">
+                  <figure>
+                    <img class="logo-height" src="../static/images/absa/bamboo.png" alt="bamboo">
+                    <figcaption>
+                      <h3>Bamboo</h3>
+                      <p>Builds and deployments</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Client">
+                  <figure>
+                    <img class="logo-height" src="../static/images/absa/download.png" alt="bitbucket">
+                    <figcaption>
+                      <h3>BitBucket</h3>
+                      <p>Managing Source Code, Collaborating on code via pull requests, inline comments</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Client">
+                  <figure>
+                    <img class="logo-height" src="../static/images/absa/atlassian-jira-logo-large.png" alt="jira">
+                    <figcaption>
+                      <h3>Jira</h3>
+                      <p>Project management tool of choice.</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
         <section>
           <!--.wrap = container (width: 90%) -->
           <div class="wrap">
@@ -408,6 +505,14 @@
       </article>
     </main>
     <!--main-->
+
+    <footer>
+      <div class="wrap">
+        <p>
+          <span class="alignright"><a href="http://netflix.com" title="Netflix"><img src="../static/images/absa/pangaea_logo_absa_orange.png" alt="Netflix"></a></span>
+        </p>
+      </div>
+    </footer>
 
     <!-- Required -->
     <script src="../static/js/webslides.js"></script>

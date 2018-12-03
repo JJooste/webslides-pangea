@@ -1,0 +1,10 @@
+.pangea-ul {
+  text-align: start;
+
+}
+
+.pangea-ul > li {
+  list-style: circle !important;
+  padding-bottom: 2em;
+
+}
